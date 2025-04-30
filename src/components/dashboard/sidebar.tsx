@@ -22,7 +22,11 @@ export function Sidebar({ className, children }: SidebarGenericProps) {
 }
 
 export function SidebarHeader({ className, children }: SidebarGenericProps) {
-  return <header className={cn(["px-6", className])}>{children}</header>;
+  return (
+    <header className={cn(["p-6 py-3 border-b border-border", className])}>
+      {children}
+    </header>
+  );
 }
 
 export function SidebarHeaderTitle({
